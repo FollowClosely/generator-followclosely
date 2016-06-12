@@ -1,6 +1,5 @@
 var express     = require('express'),
 		router      = express.Router(),
-		Article     = require('../models/article'),
 		IndexData   = require('../models/index.data.js'),
 		LandingData = require('../models/landing.data.js'),
 		SharedData  = require('../models/shared.data.js');

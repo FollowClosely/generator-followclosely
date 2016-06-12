@@ -1031,7 +1031,7 @@ input {
   .caption-p-sm a, .caption-a-sm a {
     color: #333c4e; }
     .caption-p-sm a:hover, .caption-a-sm a:hover {
-      color: #F2A925; }
+      color: #333c4e; }
 
 @media screen and (max-width: 768px) and (min-width: 640px) {
   .img-banner-sm {
@@ -1109,7 +1109,7 @@ input {
   .footer-ul li a {
     color: #999; }
   .footer-ul li:hover a {
-    color: #F2A925; }
+    color: #333c4e; }
 
 .footer-bottom {
   display: flex;

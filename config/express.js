@@ -15,7 +15,7 @@ module.exports = function(app, config) {
   app.set('views', config.root + '/app/views');
   app.set('view engine', 'jade');
 
-  app.use(favicon(config.root + '/public/image/favicon.ico'));
+  app.use(favicon(config.root + '/public/images/favicon.ico'));
   app.use(logger('dev'));
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({

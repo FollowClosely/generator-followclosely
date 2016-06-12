@@ -815,7 +815,7 @@ body {
   color: #fff;
   word-wrap: break-word; }
   body a {
-    color: #5ba4e5; }
+    color: #718087; }
 
 a:hover {
   color: #7BC0FF;
@@ -850,13 +850,13 @@ input {
   font-family: "Gotham-Book", sans-serif; }
 
 .btn-main {
-  background: #5ba4e5;
+  background: #718087;
   padding: 0 2.5rem;
   height: 40px;
   border: 0px; }
   .btn-main:hover {
-    darken: #5ba4e5, 15%;
-    background: linear-gradient(to bottom, #0074e4, #1b5098); }
+    darken: #718087, 15%;
+    background: linear-gradient(to bottom, #718087, #333c4e); }
 
 .row {
   min-width: 100%;
@@ -891,9 +891,9 @@ input {
     width: 100%;
     color: white; }
     .hero-cta a:hover {
-      background-color: rgba(0, 116, 228, 0.5); }
+      background-color: rgba(255, 230, 0, 0.5); }
     .hero-cta a.active {
-      background-color: rgba(0, 116, 228, 0.75);
+      background-color: rgba(255, 230, 0, 0.5);
       text-decoration: none; }
   .hero-cta h1 {
     font-size: 50px;
@@ -928,7 +928,7 @@ input {
     height: 43px;
     border-radius: 5px;
     border: none;
-    background: #5ba4e5; }
+    background: #718087; }
 
 @media screen and (max-width: 768px) {
   .hero-cta {
@@ -948,7 +948,7 @@ input {
   border: none; }
 
 .banner {
-  background-color: rgba(24, 52, 93, 0.85);
+  background-color: rgba(113, 128, 135, 0.75);
   padding: .6667rem, 2rem;
   position: absolute;
   min-height: 60px;
@@ -1030,9 +1030,9 @@ input {
     font-size: 13px;
     margin-bottom: 0; }
   .caption-p-sm a, .caption-a-sm a {
-    color: #5ba4e5; }
+    color: #718087; }
     .caption-p-sm a:hover, .caption-a-sm a:hover {
-      color: #55a4ff; }
+      color: #F2A925; }
 
 @media screen and (max-width: 768px) and (min-width: 640px) {
   .img-banner-sm {
@@ -1052,7 +1052,7 @@ input {
   position: absolute;
   bottom: 0px;
   text-align: center;
-  background-color: #5ba4e5; }
+  background-color: #718087; }
 
 .img-wrapper {
   position: relative;
@@ -1067,7 +1067,7 @@ input {
   width: 100%;
   height: 55px;
   color: #000;
-  background: rgba(116, 192, 5, 0.75); }
+  background: rgba(113, 128, 135, 0.75); }
 
 .img-after h3 {
   margin: 0 auto;
@@ -1082,7 +1082,7 @@ input {
     font-size: 1.5rem; }
 
 .reviews {
-  background: #718087;
+  background: #333c4e;
   padding: 20px;
   max-width: 125px; }
 
@@ -1093,7 +1093,7 @@ input {
   margin-top: 30px; }
 
 .footer {
-  background: #718087;
+  background: #333c4e;
   padding: 20px;
   max-width: 125px;
   background: #242628; }
@@ -1110,7 +1110,7 @@ input {
   .footer-ul li a {
     color: #999; }
   .footer-ul li:hover a {
-    color: #0074e4; }
+    color: #F2A925; }
 
 .footer-bottom {
   display: flex;
@@ -1181,7 +1181,7 @@ input {
     margin: 0;
     margin-left: .5rem; }
   .nav-weather-wrapper span {
-    color: #0074e4;
+    color: #718087;
     font-family: "Sentinel-Semibold", serif;
     font-size: 1.6em;
     line-height: 1.6;
@@ -1218,7 +1218,7 @@ input {
   .nav-map-li a {
     color: #242628; }
   .nav-map-li a:hover {
-    color: #55a4ff;
+    color: #F2A925;
     text-decoration: none; }
 
 .nav-social-top {
@@ -1251,7 +1251,7 @@ span.btn-inner-wrapper {
   position: absolute;
   height: 44px;
   border-radius: 5px;
-  background: #5ba4e5;
+  background: #718087;
   padding: 0 2.5rem; }
 
 li {
@@ -1375,7 +1375,7 @@ li {
     outline: none;
     border: none;
     color: white;
-    background: #5ba4e5;
+    background: #718087;
     font-family: "Gotham-Bold", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1414,7 +1414,7 @@ li {
     margin-top: 0.8em;
     color: #fff; }
     .quote i:hover {
-      color: #5ba4e5; }
+      color: #718087; }
 
 .headshots {
   padding: 0; }
@@ -1674,7 +1674,7 @@ a {
     padding: 0; } }
 .mobile-menu:before {
   content: "\2630";
-  color: #5ba4e5;
+  color: #718087;
   font-size: 3.3rem; }
 
 .mobile-menu {
@@ -1698,14 +1698,14 @@ a {
   text-align: center;
   border-left: 1px solid #ddd; }
   .nav-mobile-ul:first-child {
-    border-top: 4px solid #5ba4e5; }
+    border-top: 4px solid #718087; }
 
 .nav-mobile-li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
   color: #242628; }
   .nav-mobile-li:hover {
-    color: #5ba4e5; }
+    color: #718087; }
 
 .collapsed {
   display: none !important; }

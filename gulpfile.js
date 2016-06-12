@@ -1,6 +1,9 @@
 var gulp       = require('gulp'),
     browserify = require('browserify'),
+    del        = require('del'),
+    concat     = require('gulp-concat'),
     gutil      = require('gulp-util'),
+    jshint     = require('gulp-jshint'),
     livereload = require('gulp-livereload'),
     nodemon    = require('gulp-nodemon'),
     plumber    = require('gulp-plumber'),
@@ -10,29 +13,15 @@ var gulp       = require('gulp'),
 var config = {
   css: './public/css/',
   js: './public/js/',
-  lib: './public/lib/'
+  lib: './public/lib/',
 };
 
-gulp.task('sass', function () {
-  return sass(config.css + '**/*.scss')
-    .pipe(gulp.dest(config.css))
-    .pipe(livereload());
-});
-
-gulp.task('bundle', function(){
-  return browserify('./public/js/scripts.js')
-    .bundle()
-    .on('error', function(e) {
-      gutil.log(e);
-    })
-    .pipe(source('bundle.js'))
-    .pipe(gulp.dest(config.js));
-});
-
-gulp.task('watch', function() {
-  gulp.watch(config.css + '*.scss', ['sass']);
-  gulp.watch(config.js + '**/*.js', ['bundle']);
-});
+gulp.task('default', [
+  'styles',
+  'scripts',
+  'develop',
+  'watch'
+]);
 
 gulp.task('develop', function () {
   livereload.listen();
@@ -51,9 +40,44 @@ gulp.task('develop', function () {
   });
 });
 
-gulp.task('default', [
-  'sass',
-  'develop',
-  'bundle',
-  'watch'
-]);
+// gulp.task('bundle', function(){
+//   return browserify('./public/js/main.js')
+//     .bundle()
+//     .on('error', function(e) {
+//       gutil.log(e);
+//     })
+//     .pipe(source('bundle.js'))
+//     .pipe(gulp.dest(config.js));
+// });
+
+gulp.task('scripts', ['vet'], function(){
+  return gulp.src(config.js + 'main.js')
+    .pipe(concat('bundle.js'))
+    .pipe(gulp.dest(config.js));
+});
+
+gulp.task('styles', function () {
+  return sass(config.css + '**/*.scss')
+    .pipe(gulp.dest(config.css))
+    .pipe(livereload());
+});
+
+gulp.task('vet', function(){
+  return gulp.src([
+    './public/js/src/**/*.js',
+    './*.js'
+  ])
+  .pipe(jshint())
+  .pipe(jshint.reporter('jshint-stylish', {
+    verbose: true
+  }));
+});
+
+gulp.task('watch', function() {
+  gulp.watch(config.css + '**/*.scss', ['styles']);
+  gulp.watch(config.js + '**/*.js', ['scripts']);
+});
+
+
+
+

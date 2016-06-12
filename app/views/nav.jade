@@ -1,0 +1,64 @@
+html
+  body
+    #nav.nav.sticky
+      #nav-top.nav-flex(role='navigation')
+        .nav-logo-wrapper
+          #logo.nav-logo-top
+            a.logo(href='#', style='margin-bottom:-50px')
+              img(src='images/logo.png')
+        .nav-ghost-wrapper
+        .nav-map-wrapper.sm-hide
+          ul.nav-map-ul
+            li.nav-map-li
+              a(href='#')  Home 
+            li.nav-map-li
+              a.smoothScroll(href='#resources')  About 
+            li.nav-map-li
+              a.smoothScroll(href='#reviews')  Reviews 
+            li.nav-map-li
+              a.smoothScroll(href='#featured-categories')  Portfolio 
+            li.nav-map-li
+              a(href='#open-modal')  Contact 
+        .nav-social-wrapper.sm-hide
+          .nav-social-top
+            i.fa.fa-facebook-square
+            i.fa.fa-twitter-square
+            i.fa.fa-google-plus-square
+            i.fa.fa-houzz
+          .nav-weather-wrapper
+            canvas#partly-cloudy-day(width='36', height='36')
+            span 86°
+        .nav-sm-only
+          a
+            button.mobile-menu(type='button')
+              span.hidden Menu
+      // .nav-flex
+      .clearfix
+      #sub-nav.nav-sub-wrapper.sm-hide
+        .nav-sub
+          #nav-test.secondary-nav-wrapper
+            ul#secondary-ul.secondary-nav
+              li.sub-nav-item
+                a(href='/swimming-pools.html')  Residential Pools 
+              li.sub-nav-item
+                a(href='special-features.html')  Special Features 
+              li.sub-nav-item
+                a(href='swim-spas.html')  Swim Spas 
+              li.sub-nav-item.item-selected
+                a(href='outdoor-living.html')  Outdoor Living 
+              li.sub-nav-item
+                a(href='financing.html')  Financing 
+      #nav-mobile.nav-sm-only.collapsed
+        ul.nav-mobile-ul
+          a(href='#')
+            li.nav-mobile-li
+              | Home
+          a.smoothScroll(href='#resources')
+            li.nav-mobile-li
+              | About
+          a.smoothScroll(href='#reviews')
+            li.nav-mobile-li
+              | Reviews
+          a.smoothScroll(href='#featured-categories')
+            li.nav-mobile-li
+              | Portfolio

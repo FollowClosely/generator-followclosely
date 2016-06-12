@@ -1,2 +1,7 @@
-block content
-	h1 poop
+include layout
+
+body
+	include nav
+	block content
+		h1= title
+		p= text

@@ -1,60 +1,13 @@
-extend layout
+include layout
 
 body
+	include navAlt
 	block content
-
-		#nav.nav.sticky
-			#nav-top.nav-flex(role='navigation')
-				.nav-logo-wrapper
-					#logo.nav-logo-top
-						a.logo(href='#', style='margin-bottom:-50px')
-							img(src='images/logo.png')
-				.nav-ghost-wrapper
-				.nav-map-wrapper.sm-hide
-					ul.nav-map-ul
-						li.nav-map-li
-							a(href='#') Home
-						li.nav-map-li
-							a.smoothScroll(href='/outdoor-living.html')  About 
-						li.nav-map-li
-							a.smoothScroll(href='#reviews') #{articles} 
-						li.nav-map-li
-							a.smoothScroll(href='#featured-categories')  Portfolio 
-						li.nav-map-li
-							a(href='#open-modal') Contact 
-				.nav-social-wrapper.sm-hide
-					.nav-social-top
-						i.fa.fa-facebook-square
-						i.fa.fa-twitter-square
-						i.fa.fa-google-plus-square
-						i.fa.fa-houzz
-					.nav-weather-wrapper
-						canvas#partly-cloudy-day(width='36', height='36')
-						span 86°
-				.nav-sm-only
-					a
-						button.mobile-menu(type='button')
-							span.hidden Menu
-			#nav-mobile.nav-sm-only.collapsed
-				ul.nav-mobile-ul
-					a(href='#')
-						li.nav-mobile-li
-							| Home
-					a.smoothScroll(href='#resources')
-						li.nav-mobile-li
-							| About
-					a.smoothScroll(href='#reviews')
-						li.nav-mobile-li
-							| Reviews
-					a.smoothScroll(href='#featured-categories')
-						li.nav-mobile-li
-							| Portfolio
-
 		.hero-banner-wrapper
 			#hero.hero.ct(style='background: url(images/main01.jpg); background-size: cover; background-position: center center;')
 				.hero-cta
 					.hero-cta-h1
-						h1#hero-header SalesOps.
+						h1#hero-header #{home.sales.header}
 					.hero-cta-ul
 						ul#hero-ul
 							a#hero01.active(href='#')
@@ -81,7 +34,7 @@ body
 						span#banner-b.bold
 							| 10 Tips for a Perfect Pool
 					a(href='#open-modal', style='color:white')
-						button.btn.btn-main  Download
+						button.btn.btn-main Download
 
 
 			#heroDiv

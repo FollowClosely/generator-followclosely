@@ -27,6 +27,15 @@ $serifLight: 'Sentinel-Light', serif;
 //******** COLORS ********//
 //************************//
 
+$main: #718087;
+$mainHover: #F2A925;
+$mainLight: #333c4e;
+$mainBright: #a6b4b6;
+$mainTrans: rgba(113, 128, 135, .75);
+
+$accentTrans: rgba(255, 230, 0, .75);
+$accentLightTrans: rgba(255, 230, 0, .5);
+
 $blue: #0074e4;
 $bluer: #55a4ff;
 $blueish: #718087;
@@ -34,7 +43,6 @@ $blueBright: #0074e4;
 $blueDark: #23527c;
 
 $blueTrans: rgba(0,116,228,.75);
-$lightBlueTrans: rgba(0,116,228,.5);
 $darkBlueTrans: rgba(24,52,93,.85);
 $greenTrans: rgba(116,192,5,.75);
 

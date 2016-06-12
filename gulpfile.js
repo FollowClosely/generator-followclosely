@@ -14,6 +14,11 @@ var config = {
   css: './public/css/',
   js: './public/js/',
   lib: './public/lib/',
+  allJs: [
+    './public/js/src/**/*.js',
+    './*.js',
+    './app/**/*.js'
+  ]
 };
 
 gulp.task('default', [
@@ -63,15 +68,11 @@ gulp.task('styles', function () {
 });
 
 gulp.task('vet', function(){
-  return gulp.src([
-    './public/js/src/**/*.js',
-    './*.js',
-    './app/**/*.js'
-  ])
-  .pipe(jshint())
-  .pipe(jshint.reporter('jshint-stylish', {
-    verbose: true
-  }));
+  return gulp.src(config.allJs)
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish', {
+      verbose: true
+    }));
 });
 
 gulp.task('watch', function() {

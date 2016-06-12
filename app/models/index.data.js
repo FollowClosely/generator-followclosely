@@ -18,29 +18,26 @@ module.exports = function IndexData (opts) {
 	];
 
 	this.home = {
+		init: 'main0.jpg',
 		sales: {
-			hero: 'main01.jpg',
 			header: 'SalesOps.',
 			bannerA: 'Download the Checklist',
 			bannerB: '10 Tips for a Perfect Sale',
 			btntext: 'Download'
 		},
 		dev: {
-			hero: 'main02.jpg',
 			header: 'DevOps.',
 			bannerA: 'Download the Checklist',
 			bannerB: '11 Tricks for a Smooth Deploy(ment)',
 			btntext: 'Download'
 		},
 		builds: {
-			hero: 'main03.jpg',
 			header: 'Good Builds.',
 			bannerA: 'Download the Checklist',
 			bannerB: 'The 12 Secrets of Architecture',
 			btntext: 'Download'
 		},
 		sexy: {
-			hero: 'main04.jpg',
 			header: 'Sexy Product.',
 			bannerA: 'Download the Checklist',
 			bannerB: '13 Hacks for a Summer Bod',
@@ -49,19 +46,40 @@ module.exports = function IndexData (opts) {
 	};
 
 	this.features = {
+		
 		rowone: {
-			'Social': 'slide01.jpg',
-			'Email': 'slide02.jpg',
-			'Websites': 'slide03.jpg',
-			'SEO': 'slide04.jpg',
-			'Design': 'slide05.jpg',
-			'SalesOps': 'slide06.jpg',
+			0:[
+				'Social', 'slide01.jpg', 'ambulance'
+			],
+			1:[
+				'Email', 'slide02.jpg', 'bus'
+			],
+			2:[
+				'Websites', 'slide03.jpg', 'fighter-jet'
+			],
+			3:[
+				'SEO', 'slide04.jpg', 'rocket'
+			],
+			4:[
+				'Design', 'slide05.jpg', 'truck'
+			],
+			5:[
+				'SalesOps', 'slide06.jpg', 'motorcycle'
+			]
 		},
+
 		rowtwo: {
-			'Brand Identity': 'slide07.jpg',
-			'Lead Generation': 'slide08.jpg',
-			'Networking & Referrals': 'slide09.jpg'
+			0:[
+				'Brand Identity', 'slide07.jpg', 'taxi'
+			],
+			1:[
+				'Lead Generation', 'slide08.jpg', 'subway'
+			],
+			2:[
+				'Content Development', 'slide09.jpg', 'bicycle'
+			]
 		}
+
 	};
 
 };

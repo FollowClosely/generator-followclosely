@@ -1,12 +1,12 @@
 
 .btn-main {
-	background: $main;
+	background: $accent;
 	padding: 0 2.5rem;
 	height: 40px;
 	border: 0px;
 	&:hover {
 		darken:($main, 15%);
-    background: linear-gradient(to bottom,$main,$mainLight);
+    background: linear-gradient(to top,$accent,$accentBright);
 	}
 }
 .row {
@@ -16,13 +16,10 @@
 	margin-right: 0;
 }
 
-.title {
-
-}
-
 .hero-banner-wrapper {
 	position: relative;
-	// z-index: -1;
+	background-color: $mainLight;
+	;
 }
 .hero {
 	min-height: 550px;
@@ -95,14 +92,9 @@
 		height: 43px;
 		border-radius: 5px;
 		border: none;
-		background: $main;
+		background: $accent;
 	}
 }
-	
-.hero-cta-ul {
-
-}
-
 
 @media screen and (max-width: 768px) {
 	.hero-cta {
@@ -127,7 +119,7 @@
 }
 
 .banner {
-	background-color: $mainTrans;
+	background-color: $mainTransDark;
 	padding: .6667rem, 2rem;
 	position: absolute;
 	min-height: 60px;
@@ -341,9 +333,9 @@
 	display: flex;
 	justify-content: space-around;
   li a {
-	  color: #999;
+	  color: $mainLight;
   } li:hover a {
-  	color: $mainHover;
+  	color: $accentBright;
   }
 }
 .footer-bottom {
@@ -1075,7 +1067,7 @@ li.active  {
 
 .nav-mobile-ul {
 	font-size: 20px;
-	background-color: #e2effc;
+	background-color: $neutral;
 	width: 100%;
 	text-align: center;
 	border-left: 1px solid #ddd;
@@ -1086,9 +1078,9 @@ li.active  {
 .nav-mobile-li {
 	padding: 10px;
 	border-bottom: 1px solid #ddd;
-	color: #242628;
+	color: $main;
 	&:hover {
-		color: $main;
+		color: $accent;
 	}
 }
 

@@ -1,5 +1,5 @@
 .hero-banner-wrapper
-	#hero.hero.ct(style='background: url(images/#{home.sales.hero}); background-size: cover; background-position: center center;')
+	#hero.hero.ct(style='background: url(images/#{home.init}); background-size: cover; background-position: center center;')
 		.hero-cta
 			.hero-cta-h1
 				h1#hero-header #{home.sales.header}
@@ -8,10 +8,10 @@
 					each val, i in buttons
 						case i
 							when 0
-								a(id='hero0#{i}' class='active' href='#')
+								a(id='hero#{i}' class='active' href='#')
 									li #{val}
 							default
-								a(id='hero0#{i}' href='#')
+								a(id='hero#{i}' href='#')
 									li #{val}
 			.hero-cta-btn
 				form

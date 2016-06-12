@@ -514,7 +514,7 @@
   color: #242628; }
 
 .btn-accent {
-  background: #F2A925;
+  background: #e25440;
   color: #fff;
   border: 0px; }
   .btn-accent:hover {
@@ -547,7 +547,7 @@
   margin-top: 135px;
   margin-bottom: 0;
   margin-right: 1em;
-  background-color: rgba(27, 80, 152, 0.9);
+  background-color: rgba(50, 59, 77, 0.85);
   height: 65px;
   max-width: 100%; }
   .trapezoid:before, .trapezoid:after {
@@ -560,10 +560,10 @@
     position: absolute;
     top: 0; }
   .trapezoid:before {
-    border-right-color: rgba(27, 80, 152, 0.9);
+    border-right-color: rgba(50, 59, 77, 0.85);
     border-right-color: rgba(51, 51, 51, 0.9); }
   .trapezoid:after {
-    border-left-color: rgba(27, 80, 152, 0.9);
+    border-left-color: rgba(50, 59, 77, 0.85);
     border-top-style: solid;
     border-left-width: 1em;
     border-left-style: solid;
@@ -581,7 +581,7 @@ div.trapezoid-wrapper {
   height: 250px;
   padding: 20px;
   text-align: left;
-  background-color: rgba(0, 116, 228, 0.9);
+  background-color: rgba(51, 60, 78, 0.85);
   width: 100%;
   max-width: 1200px; }
   @media all and (max-width: 640px) {
@@ -657,7 +657,7 @@ li.sub-nav-item.item-selected a {
   font-family: "Gotham-Bold", sans-serif; }
 
 div.landing-details {
-  color: #242628;
+  color: #333c4e;
   font-size: 15px;
   font-family: "Gotham-Bold", sans-serif;
   line-height: 1.5;
@@ -668,7 +668,7 @@ div.landing-details {
   div.landing-details a {
     margin-left: 100px; }
   div.landing-details a:hover {
-    color: #23527c; }
+    color: #e25440; }
   @media all and (max-width: 640px) {
     div.landing-details {
       display: none !important; } }
@@ -849,13 +849,13 @@ input {
   font-family: "Gotham-Book", sans-serif; }
 
 .btn-main {
-  background: #333c4e;
+  background: #e25440;
   padding: 0 2.5rem;
   height: 40px;
   border: 0px; }
   .btn-main:hover {
     darken: #333c4e, 15%;
-    background: linear-gradient(to bottom, #333c4e, #718087); }
+    background: linear-gradient(to top, #e25440, #F2A925); }
 
 .row {
   min-width: 100%;
@@ -864,7 +864,8 @@ input {
   margin-right: 0; }
 
 .hero-banner-wrapper {
-  position: relative; }
+  position: relative;
+  background-color: #333c4e; }
 
 .hero {
   min-height: 550px;
@@ -927,7 +928,7 @@ input {
     height: 43px;
     border-radius: 5px;
     border: none;
-    background: #333c4e; }
+    background: #e25440; }
 
 @media screen and (max-width: 768px) {
   .hero-cta {
@@ -947,7 +948,7 @@ input {
   border: none; }
 
 .banner {
-  background-color: rgba(51, 60, 78, 0.75);
+  background-color: rgba(50, 59, 77, 0.85);
   padding: .6667rem, 2rem;
   position: absolute;
   min-height: 60px;
@@ -1066,7 +1067,7 @@ input {
   width: 100%;
   height: 55px;
   color: #000;
-  background: rgba(51, 60, 78, 0.75); }
+  background: rgba(51, 60, 78, 0.85); }
 
 .img-after h3 {
   margin: 0 auto;
@@ -1081,7 +1082,7 @@ input {
     font-size: 1.5rem; }
 
 .reviews {
-  background: #718087;
+  background: #333c4e;
   padding: 20px;
   max-width: 125px; }
 
@@ -1092,7 +1093,7 @@ input {
   margin-top: 30px; }
 
 .footer {
-  background: #718087;
+  background: #333c4e;
   padding: 20px;
   max-width: 125px;
   background: #242628; }
@@ -1107,9 +1108,9 @@ input {
   display: flex;
   justify-content: space-around; }
   .footer-ul li a {
-    color: #999; }
-  .footer-ul li:hover a {
     color: #333c4e; }
+  .footer-ul li:hover a {
+    color: #F2A925; }
 
 .footer-bottom {
   display: flex;
@@ -1486,7 +1487,7 @@ li.active .headshot img {
   left: 0;
   right: 0;
   content: '';
-  background-color: rgba(51, 60, 78, 0.75);
+  background-color: rgba(51, 60, 78, 0.85);
   transition: background-color,1s; }
 
 @media (min-width: 768px) {
@@ -1570,7 +1571,7 @@ li.active .headshot img {
   left: 0;
   right: 0;
   content: '';
-  background-color: rgba(51, 60, 78, 0.75);
+  background-color: rgba(51, 60, 78, 0.85);
   transition: background-color,1s; }
 
 .featured-post a, .featured-post h2,
@@ -1697,9 +1698,9 @@ li.active .headshot img {
 .nav-mobile-li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
-  color: #242628; }
+  color: #333c4e; }
   .nav-mobile-li:hover {
-    color: #333c4e; }
+    color: #e25440; }
 
 .collapsed {
   display: none !important; }

@@ -28,11 +28,14 @@ $serifLight: 'Sentinel-Light', serif;
 //************************//
 
 $main: #333c4e;
-$mainTrans: transparentize($main, .25);
+$mainLight: lighten($main, .15);
+$mainBright: saturate($main, .15);
+$mainDark: darken($main, .15);
+$mainDarker: darken($main, .25);
 
 $mainHover: opacify($main, .25);
-$mainLight: #718087;
-$mainBright: #a6b4b6;
+$mainTrans: transparentize($main, .15);
+$mainTransDark: transparentize($mainDarker, .15);
 
 $accent: #e25440;
 $accentTrans: transparentize($accent, .25);
@@ -41,6 +44,8 @@ $accentBright: #F2A925;
 
 $neutral: #e2effc;
 $offWhite: #F3F4F8;
+
+//////
 
 $blue: #0074e4;
 $bluer: #55a4ff;

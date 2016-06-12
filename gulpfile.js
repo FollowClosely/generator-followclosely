@@ -65,7 +65,8 @@ gulp.task('styles', function () {
 gulp.task('vet', function(){
   return gulp.src([
     './public/js/src/**/*.js',
-    './*.js'
+    './*.js',
+    './app/**/*.js'
   ])
   .pipe(jshint())
   .pipe(jshint.reporter('jshint-stylish', {

@@ -27,14 +27,20 @@ $serifLight: 'Sentinel-Light', serif;
 //******** COLORS ********//
 //************************//
 
-$main: #718087;
-$mainHover: #F2A925;
-$mainLight: #333c4e;
-$mainBright: #a6b4b6;
-$mainTrans: rgba(113, 128, 135, .75);
+$main: #333c4e;
+$mainTrans: transparentize($main, .25);
 
-$accentTrans: rgba(255, 230, 0, .75);
-$accentLightTrans: rgba(255, 230, 0, .5);
+$mainHover: opacify($main, .25);
+$mainLight: #718087;
+$mainBright: #a6b4b6;
+
+$accent: #e25440;
+$accentTrans: transparentize($accent, .25);
+$accentLightTrans: transparentize($accent, .50);
+$accentBright: #F2A925;
+
+$neutral: #e2effc;
+$offWhite: #F3F4F8;
 
 $blue: #0074e4;
 $bluer: #55a4ff;
@@ -50,7 +56,7 @@ $green: #74c005;
 $pinkButton: #D01040;
 
 $bgLight: #f8fbff;
-$offWhite: #f8fbff;
+// $offWhite: #f8fbff;
 
 $darkGrey: #242628;
 $slate: #282d31;
@@ -66,7 +72,6 @@ $yellow: #ffe600;
 $beige: #e9e8dd;
 
 $color-1: #282d31;
-$neutral: #404041;
 $color-2: #404041;
 
 

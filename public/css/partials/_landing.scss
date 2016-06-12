@@ -24,13 +24,13 @@
 }
 
 
-.btn-green{
-	background: #74c005;
+.btn-accent {
+	background: $accentBright;
   color: #fff;
   border: 0px;
   &:hover {
-  	background-color: #5d9900;
-    background: linear-gradient(to bottom,#74c005,#5d9900);
+  	background-color: $accentTrans;
+    background: linear-gradient(to bottom, $accentBright,$accent);
     background-repeat: repeat-x;
     color: #fff;
   }
@@ -158,7 +158,7 @@ div.nav-sub-wrapper{
 }
 
 div.nav-sub{
-	background: #e2effc;
+	background: $neutral;
 	width:100vw;
   height:50px;
   margin: 0 auto;
@@ -184,9 +184,9 @@ li.sub-nav-item {
 		padding: 14px 10px;
 		color: $darkGrey;
 	} a:hover{
-		color:$bluer;
+		color:$accent;
 	} &.item-selected a{
-		color: $blue !important;
+		color: $accent !important;
 		font-family: $sansBold;
 	}
 }
@@ -268,7 +268,7 @@ input#landing-zip{
 button.landing-button{
 	height: 40px;
 	width: 200px;
-	background: #74c005;
+	// background: #74c005;
   color: #fff;
 	// border: 1px solid transparent;
   border-radius: 5px;

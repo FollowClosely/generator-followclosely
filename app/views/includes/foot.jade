@@ -1,0 +1,28 @@
+#footer.footer.row
+	.footer-top
+		ul.footer-ul
+			li.footer-li
+				a(href='#')  Home 
+			li.footer-li
+				a.smoothScroll(href='#featured-categories')  Pools 
+			li.footer-li
+				a.smoothScroll(href='#reviews')  Testimonials 
+			li.footer-li
+				a.smoothScroll(href='#featured-categories')  Projects 
+			li.footer-li
+				a.smoothScroll(href='#resources2')  Resources 
+			li.footer-li
+				a.smoothScroll(href='#resources')  About Us 
+			li.footer-li
+				a(href='#open-modal')  Get a Quote 
+	hr(style='border-color: #666')
+	.footer-bottom
+		.copyright
+			p © 2016 #{company} 
+		.social
+			p Follow us!
+				each val, index in social
+					a(href='#{index}')
+						i(class="fa fa-#{val}")
+
+include ./modal

@@ -39,7 +39,7 @@ $('#hero-ul a').on('click', function(){
 	$(this).addClass('active');
 });
 
-$('#hero01').on('click', function(e){
+$('#hero00').on('click', function(e){
 	e.preventDefault();
 
 	$('#hero').attr('style',
@@ -54,7 +54,7 @@ $('#hero01').on('click', function(e){
 
 });
 
-$('#hero02').on('click', function(e){
+$('#hero01').on('click', function(e){
 	e.preventDefault();
 
 	$('#hero').attr('style',
@@ -68,7 +68,7 @@ $('#hero02').on('click', function(e){
 		Data.dev.bannerB + '</span>');
 });
 
-$('#hero03').on('click', function(e){
+$('#hero02').on('click', function(e){
 	e.preventDefault();
 
 	$('#hero').attr('style',
@@ -86,7 +86,7 @@ $('#hero03').on('click', function(e){
 
 });
 
-$('#hero04').on('click', function(e){
+$('#hero03').on('click', function(e){
 	e.preventDefault();
 	$('#hero').attr('style',
 		'background: url(' + imgDir +
@@ -176,23 +176,6 @@ $('.mobile-menu').click(function(){
 
 
 $('.fancybox').fancybox();
-
-
-var icons = new Skycons({
-	'color':'#0074E4',
-	'resizeClear': true
-}),
-	list  = [
-		"clear-day", "clear-night", "partly-cloudy-day",
-		"partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
-		"fog"
-	],
-	i;
-
-for(i = list.length; i--; )
-	icons.set(list[i], list[i]);
-
-icons.play();
 
 } );
 

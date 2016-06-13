@@ -1091,7 +1091,7 @@ input {
   width: 100%;
   height: 55px;
   color: #000;
-  background: #e25440; }
+  background: rgba(226, 84, 64, 0.85); }
 
 .img-after h3 {
   margin: 0 auto;

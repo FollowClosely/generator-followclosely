@@ -357,6 +357,10 @@
 .footer-ul {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	li {
+		margin: 0 15px;
+	}
   li a {
 	  color: $neutralDark;
   } li:hover a {
@@ -968,10 +972,13 @@ li.active  {
   font-size: 22.4px;
   font-weight: normal;
 }
+.featured-post span {
+}
 
 .post-meta {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
+	font-family: $sansLight;
 }
 
 .meta-type.story-type:before {

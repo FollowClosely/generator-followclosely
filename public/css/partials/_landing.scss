@@ -317,6 +317,78 @@ div.contact-us-btn{
     white-space: normal;
     width: 100%;
     line-height: 1.5;
-
 	}
 }
+
+.spotlight-bg {
+	background: url(../images/spotlight0.jpg);
+	background-size: cover;
+	background-position: center center;
+	min-height: 400px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.spotlight-head {
+	position: relative;
+	background: $overlay;
+	height: 400px;
+	h1 {
+		margin-top: 0;
+		padding-top: 120px;
+		font-size: 1.25em;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-size: 2.5em;
+		font-family: $sansLight;
+		display: inline-block;
+		margin-top: 0;
+		padding: 15px 0;
+		border-bottom: 1px solid white;
+	}
+	p {
+		padding-top: 18px;
+		font-size: 1.2em; 
+	}
+}
+
+.showcase-wrapper {
+	max-width: 1200px;
+	background: red;
+	margin: 0 auto;
+	h2 {
+		margin: 0;
+	}
+}
+
+.showcase {
+	margin-top: -60px;
+	display: flex;
+}
+
+.showcase-item {
+	width: 33%;
+	text-align: center;
+	background: purple;
+}
+
+// .showcase-wrapper:nth-child(1) {
+// 	.circle {
+// 		background: url(../images/showcase0.jpg);
+// 	}
+// }
+// .showcase-wrapper:nth-child(2) {
+// 	.circle {
+// 		background: url(../images/showcase1.jpg);
+// 	}
+// }
+
+// .showcase-wrapper:nth-child(3) {
+// 	.circle {
+// 		background: url(../images/showcase2.jpg);
+// 		border-radius: 50%;
+// 		width: 100px;
+// 		height: 100px;		
+// 	}
+// }

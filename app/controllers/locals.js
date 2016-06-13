@@ -4,7 +4,6 @@ module.exports = function (app) {
 	}
 
 	app.locals.company = opts.company || 'FollowClosely';
-  
   app.locals.social = opts.social || {
     'https://facebook.com/FollowClosely': 'facebook-square',
     'https://twitter.com/_Closely': 'twitter-square',
@@ -20,4 +19,12 @@ module.exports = function (app) {
     'About Us': '#resources',
     'Get a Quote': '#open-modal'
   };
+	app.locals.nav = opts.nav || {
+		'Home': '',
+		'About': 'about',
+		'Reviews': 'reviews',
+		'Portfolio':'our-work',
+		'Contact': 'contact'
+	};
+
 };

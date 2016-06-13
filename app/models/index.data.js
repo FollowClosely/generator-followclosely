@@ -5,14 +5,6 @@ module.exports = function IndexData (opts) {
 
 	this.title = 'Index Page';
 
-	this.nav = {
-		Home: '',
-		About: 'about',
-		Reviews: 'reviews',
-		Portfolio:'our-work',
-		Contact: 'contact'
-	};
-
 	this.buttons = [
 		'Sales', 'Dev', 'Builds', 'More'
 	];

@@ -518,7 +518,7 @@
   color: #fff;
   border: 0px; }
   .btn-accent:hover {
-    background-color: rgba(226, 84, 64, 0.75);
+    background-color: rgba(226, 84, 64, 0.85);
     background: linear-gradient(to bottom, #F2A925, #e25440);
     background-repeat: repeat-x;
     color: #fff; }
@@ -547,7 +547,7 @@
   margin-top: 135px;
   margin-bottom: 0;
   margin-right: 1em;
-  background-color: rgba(50, 59, 77, 0.85);
+  background-color: rgba(51, 60, 78, 0.9);
   height: 65px;
   max-width: 100%; }
   .trapezoid:before, .trapezoid:after {
@@ -560,10 +560,10 @@
     position: absolute;
     top: 0; }
   .trapezoid:before {
-    border-right-color: rgba(50, 59, 77, 0.85);
+    border-right-color: rgba(51, 60, 78, 0.9);
     border-right-color: rgba(51, 51, 51, 0.9); }
   .trapezoid:after {
-    border-left-color: rgba(50, 59, 77, 0.85);
+    border-left-color: rgba(51, 60, 78, 0.9);
     border-top-style: solid;
     border-left-width: 1em;
     border-left-style: solid;
@@ -581,7 +581,7 @@ div.trapezoid-wrapper {
   height: 250px;
   padding: 20px;
   text-align: left;
-  background-color: rgba(51, 60, 78, 0.85);
+  background-color: rgba(51, 60, 78, 0.75);
   width: 100%;
   max-width: 1200px; }
   @media all and (max-width: 640px) {
@@ -647,14 +647,16 @@ ul.secondary-nav {
   padding: 15px 0 0 0; }
 
 li.sub-nav-item a {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.5;
   padding: 14px 10px;
-  color: #242628; }
+  color: #333c4e;
+  font-family: "Gotham-Book", sans-serif; }
+li.sub-nav-item a.item-selected {
+  color: #e25440;
+  font-family: "Gotham-Medium", sans-serif; }
 li.sub-nav-item a:hover {
   color: #e25440; }
-li.sub-nav-item.item-selected a {
-  color: #e25440 !important;
-  font-family: "Gotham-Bold", sans-serif; }
 
 div.landing-details {
   color: #333c4e;
@@ -814,17 +816,18 @@ body {
   color: #fff;
   word-wrap: break-word; }
   body a {
-    color: #333c4e; }
+    color: #e25440;
+    font-family: "Gotham-Medium", sans-serif; }
 
 a:hover {
-  color: #7BC0FF;
+  color: #F2A925;
   text-decoration: none; }
 
 a:focus {
   text-decoration: none; }
 
 input {
-  color: #242628; }
+  color: #282d31; }
 
 .page-width {
   max-width: 1280px;
@@ -865,7 +868,7 @@ input {
 
 .hero-banner-wrapper {
   position: relative;
-  background-color: #333c4e; }
+  background-color: #718087; }
 
 .hero {
   min-height: 550px;
@@ -891,9 +894,9 @@ input {
     width: 100%;
     color: white; }
     .hero-cta a:hover {
-      background-color: rgba(226, 84, 64, 0.5); }
+      background-color: rgba(226, 84, 64, 0.6); }
     .hero-cta a.active {
-      background-color: rgba(226, 84, 64, 0.5);
+      background-color: rgba(226, 84, 64, 0.85);
       text-decoration: none; }
   .hero-cta h1 {
     font-size: 50px;
@@ -938,6 +941,26 @@ input {
     padding-left: 20px;
     padding-right: 20px;
     left: 0; } }
+#hero-ul a {
+  position: relative;
+  font-family: "Gotham-Book", sans-serif; }
+#hero-ul a.active:after {
+  content: '';
+  border-radius: 0 !important;
+  bottom: 0;
+  background: 0 0 !important;
+  border-color: transparent transparent #fff;
+  border-style: solid;
+  border-width: 0 10px 10px;
+  display: inline-block;
+  margin-bottom: -21px;
+  margin-left: -5px;
+  top: auto;
+  position: absolute;
+  left: 48%; }
+#hero-ul a.no-after:after {
+  display: none; }
+
 .form-wrapper {
   position: relative; }
 
@@ -948,7 +971,7 @@ input {
   border: none; }
 
 .banner {
-  background-color: rgba(50, 59, 77, 0.85);
+  background-color: rgba(51, 60, 78, 0.9);
   padding: .6667rem, 2rem;
   position: absolute;
   min-height: 60px;
@@ -1006,7 +1029,7 @@ input {
   padding-bottom: 100px; }
 
 .img-banner-sm {
-  background: #74c005;
+  background: #e25440;
   min-width: 47.5%;
   max-width: 47.5%;
   float: right;
@@ -1030,9 +1053,10 @@ input {
     font-size: 13px;
     margin-bottom: 0; }
   .caption-p-sm a, .caption-a-sm a {
-    color: #333c4e; }
+    color: #e25440;
+    font-family: "Gotham-Medium", sans-serif; }
     .caption-p-sm a:hover, .caption-a-sm a:hover {
-      color: #333c4e; }
+      color: #F2A925; }
 
 @media screen and (max-width: 768px) and (min-width: 640px) {
   .img-banner-sm {
@@ -1067,7 +1091,7 @@ input {
   width: 100%;
   height: 55px;
   color: #000;
-  background: rgba(51, 60, 78, 0.85); }
+  background: #e25440; }
 
 .img-after h3 {
   margin: 0 auto;
@@ -1082,7 +1106,7 @@ input {
     font-size: 1.5rem; }
 
 .reviews {
-  background: #333c4e;
+  background: #718087;
   padding: 20px;
   max-width: 125px; }
 
@@ -1093,7 +1117,7 @@ input {
   margin-top: 30px; }
 
 .footer {
-  background: #333c4e;
+  background: #718087;
   padding: 20px;
   max-width: 125px;
   background: #242628; }
@@ -1108,7 +1132,7 @@ input {
   display: flex;
   justify-content: space-around; }
   .footer-ul li a {
-    color: #333c4e; }
+    color: #939da5; }
   .footer-ul li:hover a {
     color: #F2A925; }
 
@@ -1213,12 +1237,13 @@ input {
 
 .nav-map-li {
   list-style-type: none;
-  padding-top: 1rem;
-  font-size: 1.15em;
+  padding-top: 1.25rem;
+  font-size: 1.25em;
   padding-left: 12px;
   padding-right: 12px; }
   .nav-map-li a {
-    color: #242628; }
+    color: #333c4e;
+    font-family: "Gotham-Book", sans-serif; }
   .nav-map-li a:hover {
     color: #F2A925;
     text-decoration: none; }
@@ -1400,23 +1425,25 @@ li {
   max-width: 62em;
   margin: 0 auto; }
   .quote p {
-    font-family: "Gotham-ThinItalic", sans-serif;
+    font-family: "Gotham-LightItalic", sans-serif;
     font-size: 2.4em;
     line-height: 1.6;
-    letter-spacing: 0.02em;
+    text-shadow: 0 0 4px black;
     color: #fff; }
   .quote h6 {
     font: 1.1em "Sentinel-Semibold", serif;
     text-transform: uppercase;
-    color: #939da5;
+    color: #fff;
     letter-spacing: 0.15em;
-    margin-top: 3em; }
+    margin-top: 3em;
+    text-shadow: 0 0 4px black; }
   .quote i {
     font-size: 3em;
     margin-top: 0.8em;
-    color: #fff; }
+    color: #fff;
+    text-shadow: 0 0 4px black; }
     .quote i:hover {
-      color: #333c4e; }
+      color: #F2A925; }
 
 .headshots {
   padding: 0; }
@@ -1487,7 +1514,7 @@ li.active .headshot img {
   left: 0;
   right: 0;
   content: '';
-  background-color: rgba(51, 60, 78, 0.85);
+  background-color: rgba(51, 60, 78, 0.75);
   transition: background-color,1s; }
 
 @media (min-width: 768px) {
@@ -1571,7 +1598,7 @@ li.active .headshot img {
   left: 0;
   right: 0;
   content: '';
-  background-color: rgba(51, 60, 78, 0.85);
+  background-color: rgba(51, 60, 78, 0.75);
   transition: background-color,1s; }
 
 .featured-post a, .featured-post h2,
@@ -1670,6 +1697,7 @@ li.active .headshot img {
 .mobile-menu:before {
   content: "\2630";
   color: #333c4e;
+  line-height: 1.65;
   font-size: 3.3rem; }
 
 .mobile-menu {

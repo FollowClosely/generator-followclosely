@@ -19,11 +19,11 @@ $(function() {
 	hero2.src = imgDir + 'main2.jpg';
 	hero3.src = imgDir + 'main3.jpg';
 
-	quote0.src = imgDir + 'quote0.jpg';
-	quote1.src = imgDir + 'quote1.jpg';
-	quote2.src = imgDir + 'quote2.jpg';
-	quote3.src = imgDir + 'quote3.jpg';
-	quote4.src = imgDir + 'quote4.jpg';
+	quote0.src = imgDir + 'hs-lg-0.jpg';
+	quote1.src = imgDir + 'hs-lg-1.jpg';
+	quote2.src = imgDir + 'hs-lg-2.jpg';
+	quote3.src = imgDir + 'hs-lg-3.jpg';
+	quote4.src = imgDir + 'hs-lg-4.jpg';
 
 	var Data = {
 		'sales': {
@@ -33,29 +33,24 @@ $(function() {
 			'bannerB': '10 Tips for a Perfect Sale'
 		},
 		'dev': {
-			'hero': hero1,
+			// 'hero': hero1,
 			'header': 'DevOps.',
 			'bannerA': 'Download the Checklist &nbsp;&rarr;',
 			'bannerB': '11 Tricks for a Smooth Deploy(ment)'
 		},
 		'builds': {
-			'hero': hero2,
+			// 'hero': hero2,
 			'header': 'Good Builds.',
 			'bannerA': 'Download the Checklist &nbsp;&rarr;',
 			'bannerB': 'The 12 Secrets of Architecture'
 		},
 		'sexy': {
-			'hero': hero3,
+			// 'hero': hero3,
 			'header': 'Sexy Product.',
 			'bannerA': 'Download the Checklist &nbsp;&rarr;',
 			'bannerB': '13 Hacks for a Summer Bod'
 		}
 	};
-
-	$('#hero-ul a').on('click', function(){
-		$('a.active').removeClass('active');
-		$(this).addClass('active');
-	});
 
 	$('#hero0').on('click', function(e){
 		e.preventDefault();
@@ -121,18 +116,12 @@ $(function() {
 			Data.sexy.bannerB + '</span>');
 	});
 
-
-	// for(var i = 0; i < quotes.length; i++){
-
-	// 	$(quote3.tag).on('click', function(){
-	// 		$('.review').attr('style',
-	// 			bgStart + quotes[i].src + bgEnd + bgStyles
-	// 		);
-	// 		$('.quote p').replaceWith('<p>' + "Sun Ray Pools took great care of us." + '</p>');
-	// 		$('.quote h6').replaceWith('<h6>' + "Robert Smith, Rowlett" + '</h6>');
-	// 	});
-	// 	console.log(quotes[i]);
-	// };
+	$('#hero-ul a').on('click', function(){
+		$(this).removeClass('no-after');
+		$('#hero-ul a.active').addClass('no-after');
+		$('a.active').removeClass('active');
+		$(this).addClass('active');
+	});
 
 	$('#quote0').on('click', function(){
 		$('.review').attr('style',
@@ -179,8 +168,6 @@ $(function() {
 		$(this).addClass('active');
 	});
 
-
-
 	$('.smoothScroll').click(function() {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
@@ -210,8 +197,7 @@ $(function() {
 		}
 	});
 
-
-	$('.fancybox').fancybox();
+	$('.lightbox').fancybox();
 
 } )
 

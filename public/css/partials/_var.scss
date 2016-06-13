@@ -12,8 +12,8 @@ $sans: 'Gotham-Book', sans-serif;
 $sansItal: 'Gotham-BookItalic', sans-serif;
 $sansBold: 'Gotham-Bold', sans-serif;
 $sansBoldItal: 'Gotham-BoldItalic', sans-serif;
-$sansLight: 'Gotham-Thin', sans-serif;
-$sansLightItal: 'Gotham-ThinItalic', sans-serif;
+$sansLight: 'Gotham-Light', sans-serif;
+$sansLightItal: 'Gotham-LightItalic', sans-serif;
 $sansSemibold: 'Gotham-Medium', sans-serif;
 $sansSemiboldItal: 'Gotham-MediumItalic', sans-serif;
 
@@ -28,22 +28,27 @@ $serifLight: 'Sentinel-Light', serif;
 //************************//
 
 $main: #333c4e;
-$mainLight: lighten($main, .15);
+$mainLight: #718087;
+$mainDark: #282d31;
+$mainDarker: #212425;
 $mainBright: saturate($main, .15);
-$mainDark: darken($main, .15);
-$mainDarker: darken($main, .25);
+// $mainLight: lighten($main, .15);
+// $mainDark: darken($main, .15);
+// $mainDarker: darken($main, .25);
 
 $mainHover: opacify($main, .25);
-$mainTrans: transparentize($main, .15);
-$mainTransDark: transparentize($mainDarker, .15);
+$mainTrans: transparentize($main, .25);
+$mainTransDark: transparentize($main, .10);
 
 $accent: #e25440;
-$accentTrans: transparentize($accent, .25);
-$accentLightTrans: transparentize($accent, .50);
+$accentDark: lighten($accent, .50);
+$accentTrans: transparentize($accent, .15);
+$accentTransLight: transparentize($accent, .40);
 $accentBright: #F2A925;
 
 $neutral: #e2effc;
 $offWhite: #F3F4F8;
+$neutralDark: #939da5;
 
 //////
 

@@ -42,12 +42,13 @@ body {
 	color: #fff;
   word-wrap: break-word;
 	a {
-		color: $main;
+		color: $accent;
+		font-family: $sansSemibold;
 	}
 }
 
 a:hover {
-	color: #7BC0FF;
+	color: $accentBright;
 	text-decoration: none;
 }
 a:focus {
@@ -55,7 +56,7 @@ a:focus {
 }
 
 input {
-	color: $darkGrey;
+	color: $mainDark;
 }
 .page-width {
 	max-width: 1280px;

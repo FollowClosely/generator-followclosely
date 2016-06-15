@@ -12,7 +12,6 @@ module.exports = function (app) {
 		var data = new IndexData();
 		res.render('index', {
 			title: data.title,
-			// nav: data.nav,
 			buttons: data.buttons,
 			features: data.features,
 			home: data.home

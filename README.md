@@ -6,3 +6,4 @@
 	a. Can I pass in data?
 4. browserify
 	a. works with gulp?
+5. fix gulp.config file

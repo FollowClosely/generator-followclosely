@@ -3,7 +3,7 @@
 1. yo:opts
 2. gulpfile
 3. further modularize includes and models
-	a. Can I pass in data?
+	(can I pass in data?)
 4. browserify
-	a. works with gulp?
+	(works with gulp?)
 5. fix gulp.config file

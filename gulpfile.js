@@ -1,6 +1,6 @@
 // TODO: import gulp.config.js file
 
-'use strict';
+// 'use strict';
 
 var gulp       = require('gulp'),
 		autoprefix = require('gulp-autoprefixer'),
@@ -37,7 +37,7 @@ gulp.task('default', [
 
 gulp.task('clean-styles', function(){
 	var files = config.css + '*.css';
-	del(files);
+	clean(files);
 });
 
 gulp.task('develop', function () {
@@ -74,7 +74,7 @@ gulp.task('scripts', ['vet'], function(){
 		.pipe(gulp.dest(config.js));
 });
 
-gulp.task('styles', function () {
+gulp.task('styles', ['clean-styles'], function () {
 	return sass(config.css + '**/*.scss')
 		.pipe(autoprefix({browsers: ['last 2 version', '> 5%']}))
 		.pipe(gulp.dest(config.css))
@@ -94,6 +94,12 @@ gulp.task('watch', function() {
 	gulp.watch(config.js + '**/*.js', ['scripts']);
 });
 
+
+////
+
+function clean(path) {
+	del(path);
+}
 
 
 

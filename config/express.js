@@ -1,10 +1,10 @@
 var express        = require('express'),
+    bodyParser     = require('body-parser'),
+    compress       = require('compression'),
+    cookieParser   = require('cookie-parser'),
     favicon        = require('serve-favicon'),
     glob           = require('glob'),
     logger         = require('morgan'),
-    cookieParser   = require('cookie-parser'),
-    bodyParser     = require('body-parser'),
-    compress       = require('compression'),
     methodOverride = require('method-override');
 
 module.exports = function(app, config) {

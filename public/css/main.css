@@ -583,6 +583,10 @@ input {
   font-size: 15px;
   font-family: "Gotham-Book", sans-serif; }
 
+.err {
+  color: #242628;
+  padding-left: 15px; }
+
 .btn-main {
   background: #e25440;
   padding: 0 2.5rem;
